@@ -10,13 +10,13 @@ function showNextPhoto() {
 currentPhotoIndex++; 
 if (currentPhotoIndex > photoCount) currentPhotoIndex = 1; 
 var elem = document.getElementById("currentPhoto"); 
-elem.src = "photo" + crrentPhotoIndex + ".jpg"; 
+elem.src = "images/photo" + crrentPhotoIndex + ".jpg"; 
 } 
 </script> 
 </head> 
 <body> 
 <div> 
-<img id="currentPhoto" src="photo1.jpg" /> 
+<img id="currentPhoto" src="images/photo1.jpg" /> 
 </div> 
 <button onclick="showNextPhoto()">Попередня</button>
 </body> 
