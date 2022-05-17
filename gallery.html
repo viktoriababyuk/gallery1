@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <title>Фотогалерея</title> 
+<script> 
+var photoCount = 6; 
+var currentPhotoIndex = 1; 
+function showNextPhoto() { 
+currentPhotoIndex++; 
+if (currentPhotoIndex > photoCount) currentPhotoIndex = 1; 
+var elem = document.getElementById("currentPhoto"); 
+elem.src = "images/photo" + crrentPuhotoIndex + ".jpg"; 
+} 
+</script> 
+</head> 
+<body> 
+<div> 
+<img id="currentPhoto" src="images/photo1.jpg" /> 
+</div> 
+<button onclick="showNextPhoto()">Попередня</button>
+</body> 
+</html> 
